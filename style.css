@@ -1,0 +1,86 @@
+body{
+    /* background-color: cadetblue; */
+}
+
+.container{
+    margin-bottom: 2rem;
+}
+
+.sub_container{
+    width: 100%;
+    display: grid;
+    grid-template-rows:100vh;
+    grid-template-columns: 9rem auto 8.3rem;
+    row-gap: 0;
+    column-gap: 0;
+}
+
+.heading{
+    height: 10rem;
+    background-color: antiquewhite;
+    text-align: center;
+    width: 100%;
+    font-size: 4rem;
+}
+
+.dice {
+    position: relative;
+    background-color: aqua;
+    height: 148vh;
+
+}
+
+.dice_img{
+    position: sticky;
+    margin: 2rem;
+    margin-top: 50vh;
+    height: 5rem;
+    width: 5rem;
+}
+
+.pacifico-regular {
+    padding-top: 2rem;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.board{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+    grid-template-rows: repeat(11,auto);
+    column-gap: 0px;
+    row-gap: 0px;
+
+}
+
+
+.block{
+    margin: 0px;
+    padding: 0px;
+    /* border: 2px solid ; */
+
+}
+
+.yellow_block{
+   background-color:yellow;
+}
+
+.blue_block{
+    background-color:blue;
+ 
+ }
+
+.current_yellow_block_img{
+    border-radius: 50%;
+}
+.current_blue_block_img{
+    border-radius: 50%;
+}
+
+.instruction{
+    text-align: center;
+    margin-bottom: 1em;
+}
