@@ -23,9 +23,16 @@ body{
     font-size: 4rem;
 }
 
-.dice {
+.dice1 {
     position: relative;
-    background-color: aqua;
+    background-color: yellow;
+    height: 148vh;
+
+}
+
+.dice2 {
+    position: relative;
+    background-color:dodgerblue;
     height: 148vh;
 
 }
@@ -47,7 +54,7 @@ body{
   
 
 .board{
-    height: 100vh;
+    height: 70vh;
     display: grid;
     grid-template-columns: repeat(10, auto);
     grid-template-rows: repeat(11,auto);

@@ -5,7 +5,7 @@ document.querySelector(".dice1").addEventListener("click",function(){
     document.getElementById("blockimg"+yellowcoin).classList.remove("current_yellow_block_img");
     random = Math.floor(Math.random(0,1)*6)+1;
     document.querySelector(".dice_img1").setAttribute("src","./dice images/dice"+random+".png");
-    if(100>yellowcoin+random){
+    if(100>=yellowcoin+random){
         yellowcoin=yellowcoin+random;
     }
     yellowcoin=stair_snake(yellowcoin);
