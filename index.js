@@ -13,7 +13,7 @@ document.querySelector(".dice1").addEventListener("click",function(){
     setTimeout(() => {
         document.getElementById("block"+yellowcoin).classList.add("yellow_block");
         document.getElementById("blockimg"+yellowcoin).classList.add("current_yellow_block_img");
-    }, 500);
+    }, 1000);
     winner(yellowcoin,"YELLOW");
     
 })
@@ -33,7 +33,7 @@ document.querySelector(".dice2").addEventListener("click",function(){
     setTimeout(() => {
         document.getElementById("block"+bluecoin).classList.add("blue_block");
         document.getElementById("blockimg"+bluecoin).classList.add("current_blue_block_img");
-    }, 500);
+    }, 1000);
     
     winner(bluecoin ,"BLUE");
     
