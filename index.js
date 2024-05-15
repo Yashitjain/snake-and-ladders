@@ -4,7 +4,9 @@ var yellowcoin = 1;
 document.querySelector(".dice_img1").addEventListener("click",function(){
     if(yellow_chance==true){
         document.getElementById("block"+yellowcoin).classList.remove("yellowcoin_block");
-        document.getElementById("blockimg"+yellowcoin).classList.remove("current_yellow_block_img");
+        document.getElementById("blockimg"+yellowcoin).classList.remove("current_yellow_block_img");    
+        var audio = new Audio("dice.mp3");
+        audio.play();
         random = Math.floor(Math.random(0,1)*6)+1;
         document.querySelector(".dice_img1").setAttribute("src","./dice images/dice"+random+".png");
         if(100>=yellowcoin+random){
@@ -31,6 +33,8 @@ document.querySelector(".dice_img2").addEventListener("click",function(){
         document.querySelector("#dice_img2").classList.add("dice_img_chance");
         document.getElementById("block"+bluecoin).classList.remove("blue_block");
         document.getElementById("blockimg"+bluecoin).classList.remove("current_blue_block_img");
+        var audio = new Audio("dice.mp3");
+        audio.play();
         random = Math.floor(Math.random(0,1)*6)+1;
         document.querySelector(".dice_img2").setAttribute("src","./dice images/dice"+random+".png");
         if(100>=bluecoin+random){
