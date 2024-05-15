@@ -3,7 +3,7 @@ var blue_Chance=false;
 var yellowcoin = 1;
 document.querySelector(".dice_img1").addEventListener("click",function(){
     if(yellow_chance==true){
-        document.getElementById("block"+yellowcoin).classList.remove("yellowcoin_block");
+        document.getElementById("block"+yellowcoin).classList.remove("yellowcoin_block","currentCoin");
         document.getElementById("blockimg"+yellowcoin).classList.remove("current_yellow_block_img");    
         var audio = new Audio("dice.mp3");
         audio.play();
@@ -15,7 +15,7 @@ document.querySelector(".dice_img1").addEventListener("click",function(){
         yellowcoin=stair_snake(yellowcoin);
         console.log("yellowcon=>"+yellowcoin);
         setTimeout(() => {
-            document.getElementById("block"+yellowcoin).classList.add("yellow_block");
+            document.getElementById("block"+yellowcoin).classList.add("yellow_block","currentCoin");
             document.getElementById("blockimg"+yellowcoin).classList.add("current_yellow_block_img");
         }, 500);
     }
@@ -31,7 +31,7 @@ var bluecoin = 1;
 document.querySelector(".dice_img2").addEventListener("click",function(){
     if(blue_Chance==true){
         document.querySelector("#dice_img2").classList.add("dice_img_chance");
-        document.getElementById("block"+bluecoin).classList.remove("blue_block");
+        document.getElementById("block"+bluecoin).classList.remove("blue_block","currentCoin");
         document.getElementById("blockimg"+bluecoin).classList.remove("current_blue_block_img");
         var audio = new Audio("dice.mp3");
         audio.play();
@@ -43,7 +43,7 @@ document.querySelector(".dice_img2").addEventListener("click",function(){
         bluecoin=stair_snake(bluecoin);
         console.log("yellowcoin=>"+yellowcoin);
         setTimeout(() => {
-            document.getElementById("block"+bluecoin).classList.add("blue_block");
+            document.getElementById("block"+bluecoin).classList.add("blue_block","currentCoin");
             document.getElementById("blockimg"+bluecoin).classList.add("current_blue_block_img");
         }, 500);
 
